@@ -33,10 +33,3 @@ CricbuzzKwd cricbuzz = new CricbuzzKwd()
 	cricbuzz.playing11Team()
 	cricbuzz.close()
 
-
-//List<WebElement> list = WebUI.findWebElements(findTestObject("Object Repository/Cricbuzz_ObjectRepository/teamA"), 30)
-//for(int i=0;i<list.size();i++)
-//{
-//	println(list.get(i).getText())
-//	
-//}
