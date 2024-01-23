@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_nav-icon nav-arrow</name>
+   <tag></tag>
+   <elementGuidId>f71739fd-2e93-42bb-a260-6b1baffe9ac7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#nav-link-groceries > span.nav-icon.nav-arrow</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='nav-link-groceries']/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>43fa9699-f2b8-41bc-a211-ba219cfb609f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>nav-icon nav-arrow</value>
+      <webElementGuid>08449c95-7fcb-494e-8b77-9e81e62d5b89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;nav-link-groceries&quot;)/span[@class=&quot;nav-icon nav-arrow&quot;]</value>
+      <webElementGuid>e5783035-0559-420b-a782-01b6e9e5d83c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='nav-link-groceries']/span[2]</value>
+      <webElementGuid>16d2e25b-9ace-4a37-a438-87e6ae1477ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/a/span[2]</value>
+      <webElementGuid>d2114a23-229c-45c0-bf1c-a77fcb25c5b7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

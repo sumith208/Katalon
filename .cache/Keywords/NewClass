@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "AA53E0754C0E35F478ED9659148476C6",
+  "keywordClasses": [
+    {
+      "name": "NewClass",
+      "keywordMethods": [
+        {
+          "name": "show1",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "show2",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

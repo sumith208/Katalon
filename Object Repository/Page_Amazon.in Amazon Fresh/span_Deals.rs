@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Deals</name>
+   <tag></tag>
+   <elementGuidId>ab5a813f-7c3c-4511-9d2d-cacd059def18</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='nav-subnav']/a[4]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>435a3ffd-e90e-4a2f-bcf2-abb6ae138ee1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>nav-a-content</value>
+      <webElementGuid>a3122169-0c6f-4e9f-bb4e-3572ec4f7c7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+      Deals
+      
+    </value>
+      <webElementGuid>6c1f4e6e-c039-4139-9104-8080db8e7ef7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;nav-subnav&quot;)/a[@class=&quot;nav-a&quot;]/span[@class=&quot;nav-a-content&quot;]</value>
+      <webElementGuid>b237dea5-c9bd-420f-9f16-818b36dfa79d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='nav-subnav']/a[4]/span</value>
+      <webElementGuid>1ea09868-774d-4b29-8cab-0e3c0baa00ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/a[4]/span</value>
+      <webElementGuid>fb80ce54-996f-466b-a80e-7743cdc35a36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '
+      Deals
+      
+    ' or . = '
+      Deals
+      
+    ')]</value>
+      <webElementGuid>a4e119d9-e37c-4d9a-b691-17841db5ae0e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
