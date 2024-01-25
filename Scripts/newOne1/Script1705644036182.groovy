@@ -15,6 +15,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -27,3 +29,17 @@ println(response.getResponseText())
 RequestObject request1 = findTestObject("Object Repository/APIRepository/secondRequest")
 def  response1 = WS.sendRequest(request1)
 println(response1.getResponseText())
+
+println("___________________________________________________________________________")
+RequestObject request2 = findTestObject("Object Repository/APIRepository/third")
+request2.setRestRequestMethod("GET")
+request2.setRestUrl("https://reqres.in/api/users?page=2")
+def  response12 = WS.sendRequest(request2)
+println(response12.getResponseText())
+
+//JSON slurper parses text or reader content into a data structure of lists and maps.
+def JsonSlurper = new JsonSlurper()
+def jsonResponse = JsonSlurper.parseText(response12.getResponseText())
+println("API Response body is: "+jsonResponse)
+String transactionId = jsonResponse.data[0].email
+println(transactionId+"                    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")

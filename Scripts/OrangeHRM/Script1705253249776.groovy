@@ -18,10 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //OrangeHrmKwd orange = new OrangeHrmKwd()
+//OrangeHrmKwd orange = new OrangeHrmKwd()
+//OrangeHrmKwd orange = new OrangeHrmKwd()
+//OrangeHrmKwd orange = new OrangeHrmKwd()
 //orange.openOrangeHRM()
 //orange.login()
 //orange.closeBrowser()
 //
 DataDriven dd = new DataDriven()
 println(dd.getUserName())
+println(dd.getUserName1())
 println(dd.getUserName1())
