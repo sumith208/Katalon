@@ -22,6 +22,7 @@ sj.open()
 sj.searchFlite()
 sj.discount()
 sj.userInformation()
+sj.seatbook()
 /*
 WebUI.openBrowser("https://www.spicejet.com/")
 WebUI.maximizeWindow()
@@ -75,6 +76,8 @@ WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonCo
 */
 //WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/closeIconAddOn'))
 //WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/button_click_addOn'))
+
+/*
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectNOW'))
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/A1seat'))
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/privateRow'))
@@ -97,4 +100,4 @@ while(true) {
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectMealsDoneButton'))
 
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue2'))
-
+*/

@@ -28,7 +28,7 @@ public class CricbuzzKwd {
 	HashMap<String, String> allrounder
 	ArrayList<String> playing11
 
-	String format
+	String Cricketformat
 
 	public CricbuzzKwd() {
 
@@ -49,23 +49,23 @@ public class CricbuzzKwd {
 		WebUI.click(locator.linkRecent())
 		WebUI.click(locator.firstMatch())
 		WebUI.click(locator.scoreCardLink())
-		String format = WebUI.getText(locator.formatName())
-		println("******** "+format+" *********")
+		Cricketformat = WebUI.getText(locator.formatName())
+		println("******** "+Cricketformat+" *********")
 	}
 
 	def playerInformationCollect(String teamName) {
+		
+		String frm = null;
+		if(Cricketformat.contains("Test")) {
+			frm = "Test"
+		}else if(Cricketformat.contains("T20I")){
+			frm = "T20I"
+		}else if(Cricketformat.contains("ODI")){
+			frm = "ODI"
+		}
+		
+		println("frm  ::"+frm)
 		for(int i=1; i<=11;i++) {
-
-			String frm = null;
-			if(format.contains("Test")) {
-				frm = "Test"
-			}else if(format.contains("T20I")){
-				frm = "T20I"
-			}else if(format.contains("ODI")){
-				frm = "ODI"
-			}
-			
-			
 
 			if(teamName == "teamA") {
 				WebUI.scrollToElement(locator.teamAA(i), 20)

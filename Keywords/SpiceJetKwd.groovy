@@ -19,6 +19,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class SpiceJetKwd {
+	SpiceJet_Locator locator = new SpiceJet_Locator()
 	
 	@Keyword
 	public void open() {
@@ -28,24 +29,24 @@ public class SpiceJetKwd {
 	
 	@Keyword
 	public void searchFlite() {
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/radioButton_roundTrip'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/from'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/from_place'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/destination_place'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/start_date'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/return_date'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/radioButton_student'))
+		WebUI.click(locator.radioButton_roundTrip())
+		WebUI.click(locator.from())
+		WebUI.click(locator.from_place())
+		WebUI.click(locator.destination_place())
+		WebUI.click(locator.start_date())
+		WebUI.click(locator.return_date())
+		WebUI.click(locator.radioButton_student())
 		WebUI.delay(3)
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/searchFlite'))
+		WebUI.click(locator.searchFlite())
 		
 	}
 	
 	@Keyword
 	public void discount() {
 		
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupCheckbox'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupContinueButton'))
-		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue'))
+		WebUI.click(locator.popupCheckbox())
+		WebUI.click(locator.popupContinueButton())
+		WebUI.click(locator.buttonContinue())
 	}
 	
 	@Keyword
@@ -80,6 +81,33 @@ public class SpiceJetKwd {
 		
 		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue'))
 		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue2'))
+	}
+	
+	@Keyword
+	def seatbook() {
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectNOW'))
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/A1seat'))
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/privateRow'))
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupCheckbox'))
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/bookSeatconfirmedContinue'))
+		
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectMeals'))
+		def i=1
+		while(true) {
+			if(WebUI.verifyElementVisible(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectFirstMeal',[id:i]),FailureHandling.CONTINUE_ON_FAILURE)) {
+				WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectFirstMeal',[id:i]))
+				break;
+				
+			}else {
+				i++
+			}
+			
+		}
+		
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectMealsDoneButton'))
+		
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue2'))
+		
 	}
 	
 	

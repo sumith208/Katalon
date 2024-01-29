@@ -1,3 +1,4 @@
+/*
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -23,10 +24,7 @@ import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
 class TestListener1 {
-	/**
-	 * Executes before every test case starts.
-	 * @param testCaseContext related information of the executed test case.
-	 */
+	
 	@BeforeTestCase
 	def testCaseListenerBefore(TestCaseContext testCaseContext) {
 		println testCaseContext.getTestCaseId()
@@ -56,3 +54,5 @@ class TestListener1 {
 		
 	}
 }
+
+*/
