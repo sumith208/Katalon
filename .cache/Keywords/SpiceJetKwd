@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "82B35D1833AC4AC161651BF408ECF0C0",
+  "keywordClasses": [
+    {
+      "name": "SpiceJetKwd",
+      "keywordMethods": [
+        {
+          "name": "open",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "searchFlite",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "discount",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "userInformation",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

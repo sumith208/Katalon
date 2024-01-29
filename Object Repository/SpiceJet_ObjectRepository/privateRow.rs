@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>popupCheckbox</name>
+   <name>privateRow</name>
    <tag></tag>
-   <elementGuidId>8430c9bb-c139-44c0-becd-9e6af0bebd41</elementGuidId>
+   <elementGuidId>73a11782-ac2d-4519-9c6a-6051778fd34a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),&quot;Terms &amp; Conditions&quot;)]//parent::a/parent::div/parent::div/parent::div/div[1]/div</value>
+         <value>//div[text()=&quot;Private Row&quot;]/parent::div</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TestSuiteDemo1</name>
+   <name>productCart_suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>fa49efb2-703e-4122-bdb8-8d42c5c9939e</testSuiteGuid>
+   <testSuiteGuid>b66bf9e9-7914-41e1-9b1b-bd4959f6417f</testSuiteGuid>
    <testCaseLink>
-      <guid>7138c590-afe3-4370-9c15-7a0585a17a08</guid>
+      <guid>68f49a11-26f3-4a50-ad7b-2208f558c2e4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/record1</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3e4cdb75-36a3-4704-b263-166e6a4fdff7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/scriptTest1</testCaseId>
+      <testCaseId>Test Cases/ProductCart</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

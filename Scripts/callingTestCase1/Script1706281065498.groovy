@@ -17,9 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//CustomKeywords.'NewClass.show1'()
-//
-//CustomKeywords.'NewClass.show2'()
+WebUI.callTestCase(findTestCase('Test Cases/calltestcase1'), [("USERNAME"):"rahulshettyacademy",("PASSWORD"):"learning"])
 
-
-
+WebUI.click(findTestObject('Object Repository/ttttt'))

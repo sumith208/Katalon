@@ -21,17 +21,13 @@ import org.openqa.selenium.Keys as Keys
 
 TestObject name = findTestObject("Object Repository/scriptTest1Objects/userEmail")
 
-public WebElemnt addButton() {
-	return By.findElement(By.ByXPath(""))
-}
+
 
 WebUI.openBrowser("")
 WebUI.navigateToUrl("https://rahulshettyacademy.com/loginpagePractise/")
 WebUI.setText(name, "rahulshettyacademy")
-WebUI.click(addButton())
+
 WebUI.setText(findTestObject("Object Repository/scriptTest1Objects/userPassword"), "learning")
-//WebUI.click(findTestObject("Object Repository/scriptTest1Objects/loginBtn"))
+WebUI.click(findTestObject("Object Repository/scriptTest1Objects/loginBtn"))
 //  WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Make Appointment'), 'Make Appointment', FailureHandling.STOP_ON_FAILURE)
 WebUI.closeBrowser()
-WebUI.enhancedClick(findTestObject)
-WebUI.findWebElements(findTestObject, 0)

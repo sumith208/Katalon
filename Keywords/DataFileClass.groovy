@@ -19,28 +19,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class DataFileClass {
-	TestData data = findTestObject("Data Files/InternalDataFile")
+	TestData data = findTestData("Data Files/InternalDataFile")
 	HashMap<String, String> hash = new HashMap<>()
-	
-	
+
+    @Keyword
 	def getUserEmail(String refName) {
 		int row=0;
-		
+
 		if(data.getColumnNames().contains("USEREMAIL")
-			) {
+				) {
 			for(int i=1; i<data.getRowNumbers();i++) {
 				row++
-				if(data.getValue("UniqueId", i) == refName) {
+				if(data.getValue("uniqueId", i) == refName) {
 					break;
 				}
 			}
 			return data.getValue("USEREMAIL", row)
-			
 		}else {
 			println("Column not found...........")
 		}
 	}
-
+	@Keyword
 	def hashCreate() {
 		hash.put("USEREMAIL", data.getValue("USEREMAIL", 1))
 		hash.put("PASSWORD", data.getValue("PASSWORD", 1))

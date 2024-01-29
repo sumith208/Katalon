@@ -1,9 +1,34 @@
 {
-  "keywordFileContentHash": "70AC039A43862BE8CE6938257FBB8DCB",
+  "keywordFileContentHash": "A9058DF5DC764A905B716A53DA38C7E5",
   "keywordClasses": [
     {
       "name": "DataFileClass",
-      "keywordMethods": []
+      "keywordMethods": [
+        {
+          "name": "getUserEmail",
+          "parameters": [
+            {
+              "name": "refName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "hashCreate",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
     }
   ],
   "javadocParsed": true

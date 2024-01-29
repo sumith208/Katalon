@@ -64,6 +64,8 @@ public class CricbuzzKwd {
 			}else if(format.contains("ODI")){
 				frm = "ODI"
 			}
+			
+			
 
 			if(teamName == "teamA") {
 				WebUI.scrollToElement(locator.teamAA(i), 20)

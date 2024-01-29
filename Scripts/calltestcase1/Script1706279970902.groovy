@@ -16,26 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+TestObject name = findTestObject("Object Repository/scriptTest1Objects/userEmail")
+WebUI.openBrowser("")
+WebUI.navigateToUrl("https://rahulshettyacademy.com/loginpagePractise/")
+WebUI.setText(name, USERNAME)
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://www.google.com/')
-
-WebUI.setText(findTestObject('Object Repository/Page_Google/textarea_q'), 'amazon')
-
-WebUI.navigateToUrl('https://www.google.com/')
-
-WebUI.setText(findTestObject('Object Repository/Page_Google/textarea_q'), 'amazon')
-
-WebUI.click(findTestObject('Object Repository/Page_amazon - Google Search/span_amazon.in'))
-
-WebUI.click(findTestObject('Object Repository/Page_Amazon.in Amazon Great Republic Day Sa_b32f02/a_Fresh'))
-
-WebUI.click(findTestObject('Object Repository/Page_Amazon.in Amazon Fresh/a_Skip'))
-
-WebUI.click(findTestObject('Object Repository/Page_Amazon.in Amazon Fresh/span_nav-icon nav-arrow'))
-
-WebUI.click(findTestObject('Object Repository/Page_Amazon.in Amazon Fresh/span_Deals'))
-
-WebUI.closeBrowser()
-
+WebUI.setText(findTestObject("Object Repository/scriptTest1Objects/userPassword"), PASSWORD)
+WebUI.click(findTestObject("Object Repository/scriptTest1Objects/loginBtn"))

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>scriptTest2</name>
+   <name>APIRequestTC</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9b7d974a-73cf-436e-a65f-ef9307d70204</testCaseGuid>
+   <testCaseGuid>db5fe840-6989-4887-bd92-7c72f75b1812</testCaseGuid>
 </TestCaseEntity>

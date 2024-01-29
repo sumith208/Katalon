@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F838DB7F1483E18AC4B4890A6EE13631",
+  "keywordFileContentHash": "CB1E09A5FC388CB62A5B71D325CAF7B9",
   "keywordClasses": [
     {
       "name": "Locators",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

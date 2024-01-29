@@ -17,6 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+SpiceJetKwd sj = new SpiceJetKwd()
+sj.open()
+sj.searchFlite()
+sj.discount()
+sj.userInformation()
+/*
 WebUI.openBrowser("https://www.spicejet.com/")
 WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/radioButton_roundTrip'))
@@ -28,6 +34,7 @@ WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/return_d
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/radioButton_student'))
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/searchFlite'))
+
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupCheckbox'))
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupContinueButton'))
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue'))
@@ -64,3 +71,30 @@ WebUI.setText(findTestObject('Object Repository/SpiceJet_ObjectRepository/input_
 
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue'))
 WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue2'))
+
+*/
+//WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/closeIconAddOn'))
+//WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/button_click_addOn'))
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectNOW'))
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/A1seat'))
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/privateRow'))
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/popupCheckbox'))
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/bookSeatconfirmedContinue'))
+
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectMeals'))
+def i=1
+while(true) {
+	if(WebUI.verifyElementVisible(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectFirstMeal',[id:i]),FailureHandling.CONTINUE_ON_FAILURE)) {
+		WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectFirstMeal',[id:i]))
+		break;
+		
+	}else {
+		i++
+	}
+	
+}
+
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/selectMealsDoneButton'))
+
+WebUI.click(findTestObject('Object Repository/SpiceJet_ObjectRepository/buttonContinue2'))
+

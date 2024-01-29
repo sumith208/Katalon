@@ -20,7 +20,7 @@ import internal.GlobalVariable
 
 public class Locators {
 	public TestObject Username() {
-		return findTestObject("Object Repository/OrangeHRM_ObjectRepository/inputUserName")
+		return findTestObject('Object Repository/OrangeHRM_ObjectRepository/inputUserName')
 	}
 
 	public TestObject inputUserPassword() {

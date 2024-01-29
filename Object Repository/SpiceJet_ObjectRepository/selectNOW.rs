@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>popupCheckbox</name>
+   <name>selectNOW</name>
    <tag></tag>
-   <elementGuidId>8430c9bb-c139-44c0-becd-9e6af0bebd41</elementGuidId>
+   <elementGuidId>abbe2ae6-7259-451c-ada6-40c89f7d3918</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),&quot;Terms &amp; Conditions&quot;)]//parent::a/parent::div/parent::div/parent::div/div[1]/div</value>
+         <value>(//*[contains(text(),&quot;SELECT&quot;)])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

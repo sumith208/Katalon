@@ -6,12 +6,11 @@
    <elementGuidId>3f463d78-7deb-48b7-b837-174e6f147f2a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[text()=&quot;Choose Your Seat&quot;]/parent::div/parent::div/parent::div/following-sibling::div//div[text()=&quot;Add&quot;]/parent::div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[text()=&quot;Add&quot;]/parent::div)[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
