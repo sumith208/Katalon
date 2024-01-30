@@ -29,6 +29,7 @@ public class FlipkartKwd {
 
 	def openPage() {
 		WebUI.openBrowser("https://www.flipkart.com/")
+		WebUI.maximizeWindow()
 	}
 
 	def cartProduct(String product) {
