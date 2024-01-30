@@ -42,4 +42,4 @@ def JsonSlurper = new JsonSlurper()
 def jsonResponse = JsonSlurper.parseText(response12.getResponseText())
 println("API Response body is: "+jsonResponse)
 String transactionId = jsonResponse.data[0].email
-println(transactionId+"                    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+println(transactionId+"                    :::::::::::::::::::")

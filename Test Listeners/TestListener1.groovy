@@ -33,7 +33,7 @@ class TestListener1 {
 	}
 	@AfterTestCase
 	def testCaseListenerAfter() {
-		println("after test case .>>>>>>>>>>>>>>")
+		println("after test case .:::::::::::")
 	}
 	
 	@BeforeTestSuite
@@ -42,11 +42,11 @@ class TestListener1 {
 	}
 	@AfterTestSuite
 	def suiteListenerAfter() {
-		println("After test SUITE  ...........................>>>>>>>>>>")
+		println("After test SUITE  ...........................:::")
 	}
 
 	def onTestCaseSuccess() {
-		println("test case passed successfully  ...........................>>>>>>>>>>")
+		println("test case passed successfully  ...........................:::")
 	}
 	
 	def onTestaseFailure() {
