@@ -46,6 +46,12 @@ public class FlipkartKwd {
 //		println(WebUI.getText(locator.cartProductName()))
 	}
 	
+	def getPrice() {
+	 WebUI.switchToWindowIndex(1)
+	 String price = WebUI.getText(locator.Price())
+	 println(price)
+	}
+	
 	def close() {
 		WebUI.closeBrowser()
 	}

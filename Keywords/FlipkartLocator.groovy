@@ -36,5 +36,8 @@ public class FlipkartLocator {
 		return findTestObject("Object Repository/Flipkart_ObjectReository/txtCartProductName")
 	}
 	
+	public TestObject Price() {
+		return findTestObject("Object Repository/Flipkart_ObjectReository/txtPrice")
+	}
 	
 }
