@@ -6,26 +6,31 @@
       "keywordMethods": [
         {
           "name": "open",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "searchFlite",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "discount",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "userInformation",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "seatbook",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
