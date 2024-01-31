@@ -17,27 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-TestData data = findTestData(GlobalVariable.dataFiles)
-String email = data.getValue("USEREMAIL", 1)
-String password = data.getValue("PASSWORD", 1)
-ProductCartKwd product = new ProductCartKwd()
-product.goto1()
-product.login(email, password)
-product.cartProduct()
-product.validateProduct()
-WebUI.back()
-for(int i=1; i<10;i++) {
-	def nnmm= WebUI.getText(findTestObject('Object Repository/ProductCart_ObjectRepository/checkbox_label',[id:i]))
-	System.out.println(nnmm)
-}
+WebUI.openBrowser("")
+WebUI.navigateToUrl("https://webhook.site/")
+WebUI.click(findTestObject('Object Repository/WebhookSite_ObjectRepository/more_dropdownOption'))
+WebUI.click(findTestObject('Object Repository/WebhookSite_ObjectRepository/option_deleteAllRequest'))
+WebUI.acceptAlert()
+String url12 = WebUI.getText(findTestObject('Object Repository/WebhookSite_ObjectRepository/url_wh'))
+System.out.println(" :::::: "+url12)
+WebUI.navigateToUrl(url12)
+WebUI.navigateToUrl("https://webhook.site/")
+WebUI.delay(2)
+boolean bool = WebUI.verifyElementVisible(findTestObject('Object Repository/WebhookSite_ObjectRepository/recentNotification'))
+System.out.println(" :::::: "+bool)
+WebUI.closeBrowser()
 
-WebUI.back()
-for(int i=1; i<10;i++) {
-	WebUI.waitForElementVisible(findTestObject('Object Repository/ProductCart_ObjectRepository/checkbox_label',[id:i]), 20)
-	WebUI.check(findTestObject('Object Repository/ProductCart_ObjectRepository/input_checkbox',[id:i]))
-	WebUI.delay(1)
-	
-}
-//product.close()
 
 

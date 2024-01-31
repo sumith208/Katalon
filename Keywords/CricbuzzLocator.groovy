@@ -48,7 +48,7 @@ public class CricbuzzLocator {
 	}
 
 	public  TestObject playerAverage(String formate1) {
-		return findTestObject("Object Repository/Cricbuzz_ObjectRepository/playerAverage",[frm:formate1])
+		return findTestObject('Object Repository/Cricbuzz_ObjectRepository/playerAverage',[frm:formate1])
 	}
 
 
@@ -61,7 +61,7 @@ public class CricbuzzLocator {
 	}
 
 	public TestObject teamAA(int number1) {
-		return findTestObject("Object Repository/Cricbuzz_ObjectRepository/teamA",[id:number1])
+		return findTestObject('Object Repository/Cricbuzz_ObjectRepository/teamA',[id:number1])
 	}
 
 	public TestObject teamBB(int number1) {

@@ -22,7 +22,7 @@ public class ProductCartKwd {
 
 	ProductCartLocator pcl = new ProductCartLocator()
 
-	def got() {
+	def goto1() {
 		WebUI.openBrowser("https://rahulshettyacademy.com/client")
 	}
 
