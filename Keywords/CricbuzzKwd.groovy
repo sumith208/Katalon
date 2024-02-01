@@ -187,7 +187,7 @@ public class CricbuzzKwd {
 	}
 	def playing11Team() {
 		int count =1;
-		println("______________Best Playing11____________________")
+		println("___________=== :: Best playing11_:::__________________")
 		for(String playerName : playing11) {
 			println("         "+count+" :: "+playerName)
 			count++
@@ -209,7 +209,7 @@ public class CricbuzzKwd {
 	//			playing11.add(actName)
 	//			batsman.remove(actName)
 	//		}
-	//		println("::::::::::::::::: ::::::::::::::::::::::::::::::::::: batsman ::"+playing11)
+	//		println("::::::::::::::::: ::::::::::::==::::::::::::::: batsman ::"+playing11)
 	//
 	//		for(int i=0; i<4; i++) {
 	//			int low =9999;
@@ -225,7 +225,7 @@ public class CricbuzzKwd {
 	//			playing11.add(actName)
 	//			bowler.remove(actName)
 	//		}
-	//		println("::::::::::::::::: ::::::::::::::::::::::::::::::::::: batsman+ bowler ::"+playing11)
+	//		println("::::::::::::::::: ::::::::::::::::::::::::::::::::::: Batsman+ BOWLER ::"+playing11)
 	//
 	//		for(int i=0; i<2; i++) {
 	//			int max =0;
