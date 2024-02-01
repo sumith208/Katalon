@@ -50,7 +50,7 @@ public class CricbuzzKwd {
 		WebUI.click(locator.firstMatch())
 		WebUI.click(locator.scoreCardLink())
 		Cricketformat = WebUI.getText(locator.formatName())
-		println("******** "+Cricketformat+" *********")
+		println("**==**** "+Cricketformat+" *****==**")
 	}
 
 	def playerInformationCollect(String teamName) {
@@ -241,7 +241,7 @@ public class CricbuzzKwd {
 	//			playing11.add(actName)
 	//			allrounder.remove(actName)
 	//		}
-	//		println("::::::::::::::::: ::::::::::::::::::::::::::::::::::: batsman + bowler + allrounder ::"+playing11)
+	//		println("::::::::::::::::: ::::===:::::::::::::::::::==::::::: batsman + bowler + allrounder ::"+playing11)
 	//
 	//		for(int i=0; i<1; i++) {
 	//			int max =0;
