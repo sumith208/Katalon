@@ -19,6 +19,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class NewClass {
+	
+	TestData  data = findTestData("Data Files/InternalDataFile")
+	def getDatFileVAlue(rname) {
+		
+
+				HashMap<String,String> hash =  new HashMap<>();
+		String[] arr = ['lakkappa','basidono'];
+		String[] dd = data.getColumnNames()
+		for(int i=0;i<dd.length; i++) {
+			println(dd[i])
+		}
+		data.getRowNumbers()
+		int row=0;
+		if(dd.contains("uniqueId")) {
+			for(int i=1; i< data.getRowNumbers(); i++) {
+				
+				if(data.getValue("uniqueId",i)== rname) {
+					row =i;
+					break;
+				}
+			}
+			if(row == 0) {
+				println("Reference name is not there in sheet.")
+				return;
+			}
+			
+			for(int i=0; i<dd.length; i++) {
+				hash.put(dd[i],data.getValue(dd[i], row));
+				 
+			}
+		}else {
+			println("ccolumn is not present.")
+		}
+		return hash
+		
+		
+	}
+	
+	
 	@Keyword
 	def show1() {
 		println "inside show1 ....."

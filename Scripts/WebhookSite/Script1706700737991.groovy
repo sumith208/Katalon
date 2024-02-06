@@ -10,6 +10,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -31,5 +32,13 @@ boolean bool = WebUI.verifyElementVisible(findTestObject('Object Repository/Webh
 System.out.println(" :::::: "+bool)
 WebUI.closeBrowser()
 
+
+
+//RequestObject  request = findTestObject("Object Repository/APIRepository/fourth")
+////request.setHttpHeaderProperties("POST")
+////request.setRestUrl("https://webhook.site/279e3dda-59c2-4879-96a2-cbcfe51bf4aa")
+////request.setHttpBody(requestBody)
+//def response = WS.sendRequest(request)
+//System.out.println(response.responseText())
 
 

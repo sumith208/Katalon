@@ -29,4 +29,19 @@
       <initValue>'Data Files/InternalDataFile'</initValue>
       <name>dataFiles</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>G_ShortTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>10</initValue>
+      <name>G_MidTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>15</initValue>
+      <name>G_LongTimeOut</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

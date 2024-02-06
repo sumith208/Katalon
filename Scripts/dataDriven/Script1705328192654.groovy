@@ -17,22 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-TestData data = findTestData("Data Files/testDataFile")
-println("value"+data.getValue(1, 1))
+//TestData data = findTestData("Data Files/testDataFile")
+//println("value"+data.getValue(1, 1))
+//
+//
+//TestData internaldata = findTestData(GlobalVariable.dataFiles)
+//println("value hdshh"+internaldata.getValue(1, 1))
+//println(internaldata.getValue("USEREMAIL", 1))
+//println(internaldata.getValue("USEREMAIL", 2))
+//
+//HashMap<String, ArrayList<String>> hash = new HashMap<>()
+//String[] columnName = internaldata.getColumnNames()
+////for(String ss : columnName) {
+////}
+//println(internaldata.getAllData())
+//// https://reqres.in/ ::: API url
+//DataFileClass obj = new DataFileClass()
+//println(obj.getUserEmail("one"))
+//println(obj.getUserEmail("two"))
+//println(obj.getUserEmail("three"))
 
-
-TestData internaldata = findTestData(GlobalVariable.dataFiles)
-println("value hdshh"+internaldata.getValue(1, 1))
-println(internaldata.getValue("USEREMAIL", 1))
-println(internaldata.getValue("USEREMAIL", 2))
-
-HashMap<String, ArrayList<String>> hash = new HashMap<>()
-String[] columnName = internaldata.getColumnNames()
-//for(String ss : columnName) {
-//}
-println(internaldata.getAllData())
-// https://reqres.in/ ::: API url
-DataFileClass obj = new DataFileClass()
-println(obj.getUserEmail("one"))
-println(obj.getUserEmail("two"))
-println(obj.getUserEmail("three"))
+NewClass obj = new NewClass()
+HashMap hash = obj.getDatFileVAlue("one")
+println(hash.get("PASSWORD"))
+println(hash.get("USEREMAIL"))
+println(hash)

@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 WebUI.delay(5)
+WebUI.tab
 
 WebUI.openBrowser("https://www.hims.com/")
 WebUI.delay(5)
