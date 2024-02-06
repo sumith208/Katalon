@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "8A9D9799924E313ABC7D3B4241229BB0",
+  "keywordClasses": [
+    {
+      "name": "SpiceJetKwd",
+      "keywordMethods": [
+        {
+          "name": "open",
+          "parameters": []
+        },
+        {
+          "name": "searchFlite",
+          "parameters": []
+        },
+        {
+          "name": "discount",
+          "parameters": []
+        },
+        {
+          "name": "userInformation",
+          "parameters": []
+        },
+        {
+          "name": "seatbook",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

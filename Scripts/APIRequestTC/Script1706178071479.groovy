@@ -19,7 +19,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+/*
 RequestObject request = findTestObject('Object Repository/APIRepository/firstRequest')
 
 def response = WS.sendRequest(request)
@@ -43,3 +43,7 @@ def jsonResponse = JsonSlurper.parseText(response12.getResponseText())
 println("API Response body is: "+jsonResponse)
 String transactionId = jsonResponse.data[0].email
 println(transactionId+"                    :::::::::::::::::::")
+*/
+RequestObject request5 = findTestObject("Object Repository/APIRepository/fourth")
+def resp5 = WS.sendRequest(request5)
+println(resp5.getResponseBodyContent())
