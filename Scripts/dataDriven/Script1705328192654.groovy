@@ -48,53 +48,29 @@ import org.openqa.selenium.Keys as Keys
 //println(obj.getUserEmail("two"))
 //println(obj.getUserEmail("three"))
 
-//NewClass obj = new NewClass()
+NewClass obj = new NewClass()
 //HashMap hash = obj.getDatFileVAlue("one")
 //println(hash.get("PASSWORD"))
 //println(hash.get("USEREMAIL"))
 //println(hash)
+obj.getExportdata("Technology","Customer Segment")
 
 
-        FileInputStream file = new FileInputStream("C:\\Users\\Lakkappa Y\\git\\Katalon\\Resources\\ExcelDataFile.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet sheet = workbook.getSheet("Orders");
-		
-		Iterator<Row> rowIterator = sheet.iterator();
-		while (rowIterator.hasNext()) {
-		    Row row = rowIterator.next();
-		    Iterator<Cell> cellIterator = row.iterator();
-		    while (cellIterator.hasNext()) {
-		        Cell cell = cellIterator.next();
-		        DataFormatter dataFormatter = new DataFormatter();
-		        String cellValue = dataFormatter.formatCellValue(cell)
-				
-		        System.out.println(cellValue);
-		        
-		    }
-		}
-		
-		
-		cell
-		row
-		sheet
-		XssFworkbook
-		Dataformatter
-		
-		cell
-		row
-		sheet
-		XSSFWorkbok
-		Dataformatter
-		
-		cell
-		row
-		sheet
-		XSSFWorkbook
-		Dataformatter
-		
-		import org.apache.poi.ss.usermodel.Cell
-		import org.apache.poi.ss.usermodel.Row;
-		import org.apache.poi.ss.usermodel.Sheet;
-		import org.apache.poi.xssf.usermode.XSSFWorkbook;
-		import org.apache.poi.ss.usermodel.DataFormatter;
+//        FileInputStream file = new FileInputStream("C:\\Users\\Lakkappa Y\\git\\Katalon\\Resources\\ExcelDataFile.xlsx");
+//		XSSFWorkbook workbook = new XSSFWorkbook(file);
+//		Sheet sheet = workbook.getSheet("Orders");
+//		
+//		Iterator<Row> rowIterator = sheet.iterator();
+//		while (rowIterator.hasNext()) {
+//		    Row row = rowIterator.next();
+//		    Iterator<Cell> cellIterator = row.iterator();
+//		    while (cellIterator.hasNext()) {
+//		        Cell cell = cellIterator.next();
+//		        DataFormatter dataFormatter = new DataFormatter();
+//		        String cellValue = dataFormatter.formatCellValue(cell)
+//				
+//		        System.out.println(cellValue);
+//		        
+//		    }
+//		}
 		
