@@ -25,19 +25,6 @@ product.goto1()
 product.login(email, password)
 product.cartProduct()
 product.validateProduct()
-WebUI.back()
-for(int i=1; i<10;i++) {
-	def nnmm= WebUI.getText(findTestObject('Object Repository/ProductCart_ObjectRepository/checkbox_label',[id:i]))
-	System.out.println(nnmm)
-}
-
-WebUI.back()
-for(int i=1; i<10;i++) {
-	WebUI.waitForElementVisible(findTestObject('Object Repository/ProductCart_ObjectRepository/checkbox_label',[id:i]), 20)
-	WebUI.check(findTestObject('Object Repository/ProductCart_ObjectRepository/input_checkbox',[id:i]))
-	WebUI.delay(1)
-	
-}
-//product.close()
+product.close()
 
 

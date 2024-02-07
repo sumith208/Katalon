@@ -12,14 +12,12 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
-
-
-import java.util.*;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -53,8 +51,8 @@ NewClass obj = new NewClass()
 //println(hash.get("PASSWORD"))
 //println(hash.get("USEREMAIL"))
 //println(hash)
-obj.getExportdata("Technology","Customer Segment")
-
+String value = obj.getExportdata("Technology","Customer Segment")
+KeywordUtil.logInfo("Value :"+value)
 
 //        FileInputStream file = new FileInputStream("C:\\Users\\Lakkappa Y\\git\\Katalon\\Resources\\ExcelDataFile.xlsx");
 //		XSSFWorkbook workbook = new XSSFWorkbook(file);

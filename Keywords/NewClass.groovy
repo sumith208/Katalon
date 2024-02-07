@@ -72,19 +72,15 @@ public class NewClass {
 	}
 	
 	def getExportdata(String refName, String columnName) {
-		int rrnumber;
+		
+		DataFormatter dataformatter = new DataFormatter();
 		FileInputStream fis = new FileInputStream("C:\\Users\\Lakkappa Y\\git\\Katalon\\Resources\\ExcelDataFile.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		Sheet sheet = workbook.getSheet("Orders");
-		Row row = sheet.getRow(0);
-		Cell cell= row.getCell(0)
-		DataFormatter dataformatter = new DataFormatter();
-		def value  = dataformatter.formatCellValue(cell); 
-		println("::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+dataformatter.formatCellValue(sheet.getRow(0).getCell(0)))
-		println("sheet.getLastRowNum() :"+sheet.getLastRowNum()+ "sheet.getRow(0).getLastCellNum()"+sheet.getRow(0).getLastCellNum())
-		
+		String value123 = dataformatter(workbook.getSheet("Orders").getRow(1).getCell(1))
+		System.out.println(value123)
+		int rrnumber;
 		for(int i=0;i<1000;i++) {
-			println("::: row number :"+i+"   value :"+dataformatter.formatCellValue(sheet.getRow(i).getCell(9)))
 			if(refName.equalsIgnoreCase(dataformatter.formatCellValue(sheet.getRow(i).getCell(9)))) {
 				rrnumber =i;
 				break;
@@ -93,16 +89,12 @@ public class NewClass {
 		
 		int ccnumber ;
 		for(int i=0; i<sheet.getRow(0).getLastCellNum();i++) {
-			println(dataformatter.formatCellValue(sheet.getRow(0).getCell(i)))
 			if(columnName.equalsIgnoreCase(dataformatter.formatCellValue(sheet.getRow(0).getCell(i)))) {
 				ccnumber = i;
 				break;
 			}
-			
 		}
 		String expectedValue = dataformatter.formatCellValue(sheet.getRow(rrnumber).getCell(ccnumber))
-		println("expectedValue  :: "+expectedValue+"::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
-		println("rrnumber :"+rrnumber+"     ccnumber :"+ccnumber)
-		
+		return expectedValue;
 	}
 }
