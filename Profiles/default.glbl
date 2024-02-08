@@ -44,4 +44,9 @@
       <initValue>15</initValue>
       <name>G_LongTimeOut</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://webhook.site/ad977db3-7020-41f7-86d4-c7a83c8381c0'</initValue>
+      <name>WEBHOOKURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
